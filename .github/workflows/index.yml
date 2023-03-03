@@ -17,5 +17,5 @@ jobs:
           node_modules/sfdx-cli/bin/run plugins:install @salesforce/sfdx-scanner
       - name: Run SFDX Scanner
         run: 
-          sfdx scanner:run -f table -t '/github-action-practice/'  --pmdconfig 'ruleset.xml' 
+          node_modules/sfdx-cli/bin/run scanner:run -f table -t '/github-action-practice/' --pmdconfig 'ruleset.xml' 
         
