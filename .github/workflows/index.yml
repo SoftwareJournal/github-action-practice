@@ -17,5 +17,5 @@ jobs:
           node_modules/sfdx-cli/bin/run plugins:install @salesforce/sfdx-scanner
       - name: Run SFDX Scanner
         run: 
-          node_modules/sfdx-cli/bin/run scanner:run --format table --target '/' --pmdconfig 'ruleset.xml' --engine 'eslint-lwc,pmd'
+          node_modules/sfdx-cli/bin/run scanner:run --format table --target './**/*.cls,./**/*.js' --pmdconfig 'ruleset.xml' --engine 'eslint-lwc,pmd'
         
